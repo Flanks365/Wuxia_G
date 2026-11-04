@@ -17,24 +17,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73a98882-3b4a-4d76-b988-e1e2436ddff8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Components/HealthComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Projectile/Projectile.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Projectile/SpawnProjectile.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Components/HealthComponent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Projectile/Projectile.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Projectile/SpawnProjectile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/AI/BaseAiController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_Player_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_Player_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/ABP_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/ABP_Bot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/Anim_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/Anim_StrafeLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/Anim_StrafeRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/Anim_Walking.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/Anim_Walking.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/BS_GroundLocomotion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Character/Hero/Animations/BS_GroundLocomotion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Main/Character/Hero/Skeletal/SKL_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Character/Hero/Skeletal/SKL_Bot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Character/BaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Character/BaseCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Character/BaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Character/BaseCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate6.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate7.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate9.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Crate/Textures/T_Crate9.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Animations/Anim_SafeOpen.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Animations/Anim_SafeOpen.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Materials/MI_Safe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Materials/MI_Safe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Skeletal/PHYS_Safe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Skeletal/PHYS_Safe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Skeletal/SKL_Safe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Skeletal/SKL_Safe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Skeletal/SK_Safe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Skeletal/SK_Safe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Textures/T_Safe1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Textures/T_Safe1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Textures/T_Safe2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Textures/T_Safe2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Textures/T_Safe3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Safe/Textures/T_Safe3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/Materials/MI_Light_Shrine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/Materials/MI_Light_Shrine.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/Materials/MI_Shrine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/Materials/MI_Shrine.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/StaticMesh/StaticMesh_Shrine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/StaticMesh/StaticMesh_Shrine.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/Textures/TX_Shrine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/mechanics/Interactables/Shrine/Textures/TX_Shrine.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/level_main_HLOD0_Instancing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/level_main_HLOD0_Instancing.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Projectile/Projectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Projectile/Projectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/lecture18552.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/lecture18552.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Intermediate/Build/Mac/UnrealEditor/Inc/lecture18552/UHT/OverlapZone.gen.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Character/PlayerCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Components/HealthComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Components/InventoryComponent.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Projectile/Projectile.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Projectile/SpawnProjectile.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/UI/ItemSlot.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/AI/BaseAiController.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Character/PlayerCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Components/HealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Components/InventoryComponent.h" root0="FORCE_HIGHLIGHTING" />
@@ -82,7 +90,7 @@
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Projectile/Projectile.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Projectile/SpawnProjectile.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/UI/ItemSlot.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/lecture18552.uproject" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lecture18552.uproject" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -91,61 +99,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.971380174078168E-5" />
-      <entry key="MS500" value="0.1317614279113422" />
-      <entry key="S2" value="0.6024861574973932" />
-      <entry key="S5" value="0.8165425660513088" />
-      <entry key="S10" value="0.9036274487042049" />
-      <entry key="S30" value="0.9670299427493924" />
-      <entry key="S60" value="1.0609527624800446" />
-      <entry key="M2" value="3.4798302620302075" />
-      <entry key="M5" value="32.353235734750456" />
-      <entry key="M10" value="97.84823933145285" />
-      <entry key="M15" value="161.39534371802503" />
-      <entry key="M30" value="323.88120412571175" />
-      <entry key="H1" value="564.2916849849947" />
-      <entry key="H2" value="879.6582732692104" />
-      <entry key="H4" value="1207.1393947003594" />
-      <entry key="D1" value="1692.2999988376307" />
-      <entry key="W1" value="1807.592835232838" />
+      <entry key="MS100" value="8.778574309248387E-28" />
+      <entry key="MS500" value="3.878687565963579E-6" />
+      <entry key="S2" value="0.04438463261633764" />
+      <entry key="S5" value="0.29988996562984144" />
+      <entry key="S10" value="0.7242419467495869" />
+      <entry key="S30" value="3.7492916496323567" />
+      <entry key="S60" value="10.059026958262011" />
+      <entry key="M2" value="20.066899632887537" />
+      <entry key="M5" value="45.73661584453661" />
+      <entry key="M10" value="101.59319809473632" />
+      <entry key="M15" value="161.38093507168063" />
+      <entry key="M30" value="323.6335537706082" />
+      <entry key="H1" value="570.3605409497083" />
+      <entry key="H2" value="895.5021738834732" />
+      <entry key="H4" value="1233.9646437789297" />
+      <entry key="D1" value="1737.6384209656244" />
+      <entry key="W1" value="1857.7285270333377" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000000064" />
-      <entry key="S30" value="1.000038246856417" />
-      <entry key="S60" value="1.013963963615228" />
-      <entry key="M2" value="1.319110552527618" />
-      <entry key="M5" value="4.529372972652297" />
-      <entry key="M10" value="13.437213036099957" />
-      <entry key="M15" value="23.469692610794034" />
-      <entry key="M30" value="52.25600583368526" />
-      <entry key="H1" value="95.44369215646326" />
-      <entry key="H2" value="147.6832367113385" />
-      <entry key="H4" value="198.29749827875258" />
-      <entry key="D1" value="270.22562064743715" />
-      <entry key="W1" value="287.03281053972904" />
+      <entry key="MS100" value="1.0000000000000027" />
+      <entry key="MS500" value="1.0012073000594932" />
+      <entry key="S2" value="1.1864034311046745" />
+      <entry key="S5" value="1.512042676571049" />
+      <entry key="S10" value="1.7689353633794136" />
+      <entry key="S30" value="2.970049065699999" />
+      <entry key="S60" value="4.754888005940746" />
+      <entry key="M2" value="7.229318809546434" />
+      <entry key="M5" value="12.165190148502628" />
+      <entry key="M10" value="20.683448640085732" />
+      <entry key="M15" value="30.215389883761723" />
+      <entry key="M30" value="58.603247414133854" />
+      <entry key="H1" value="102.66075097294139" />
+      <entry key="H2" value="156.68655380216484" />
+      <entry key="H4" value="209.2769003334258" />
+      <entry key="D1" value="284.3129121228416" />
+      <entry key="W1" value="301.894313954731" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.92353218571223E-4" />
-      <entry key="MS500" value="0.2036070951874019" />
-      <entry key="S2" value="0.9569092032352995" />
-      <entry key="S5" value="1.4602760549905724" />
-      <entry key="S10" value="1.7031753722534966" />
-      <entry key="S30" value="1.894553664826319" />
-      <entry key="S60" value="2.036727238671473" />
-      <entry key="M2" value="4.765372483178936" />
-      <entry key="M5" value="36.80189465709132" />
-      <entry key="M10" value="111.1563753167448" />
-      <entry key="M15" value="184.7179355249488" />
-      <entry key="M30" value="375.98490724104863" />
-      <entry key="H1" value="659.601489167609" />
-      <entry key="H2" value="1027.2371232668422" />
-      <entry key="H4" value="1405.3654499745833" />
-      <entry key="D1" value="1962.5089913671377" />
-      <entry key="W1" value="2094.623110520159" />
+      <entry key="MS100" value="6.053260253608362E-4" />
+      <entry key="MS500" value="0.22750106018422606" />
+      <entry key="S2" value="0.8388698025896383" />
+      <entry key="S5" value="1.5087411608209715" />
+      <entry key="S10" value="2.235970125749777" />
+      <entry key="S30" value="6.437937459495462" />
+      <entry key="S60" value="14.535436179845595" />
+      <entry key="M2" value="27.07447064590052" />
+      <entry key="M5" value="57.74738129209521" />
+      <entry key="M10" value="122.1258350890085" />
+      <entry key="M15" value="191.43979493316655" />
+      <entry key="M30" value="382.0808520829455" />
+      <entry key="H1" value="672.8842793431073" />
+      <entry key="H2" value="1052.0816455645447" />
+      <entry key="H4" value="1443.1681048468567" />
+      <entry key="D1" value="2021.9341903520487" />
+      <entry key="W1" value="2159.6202255062726" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -170,6 +178,7 @@
         <option name="worktreeMode" value="WORKSPACE" />
       </template>
     </option>
+    <option name="version" value="1" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -198,7 +207,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Uproject.lecture18552">
     <configuration name="lecture18552" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
         <option name="CONFIGURATION" value="DebugGame Editor" />
