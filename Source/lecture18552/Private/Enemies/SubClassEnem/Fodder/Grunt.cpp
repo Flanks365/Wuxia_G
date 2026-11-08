@@ -1,14 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Enemies/SubClassEnem/Mid/Wretches.h"
+#include "Enemies/SubClassEnem/Fodder/Grunt.h"
 
 
-AWretches::AWretches()
+AGrunt::AGrunt()
 {
 }
 
-void AWretches::BeginPlay()
+void AGrunt::BeginPlay()
 {
 	Super::BeginPlay();
 }

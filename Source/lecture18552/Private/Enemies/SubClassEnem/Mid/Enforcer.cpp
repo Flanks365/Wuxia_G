@@ -1,14 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Enemies/SubClassEnem/Elite/Burrowers.h"
+#include "Enemies/SubClassEnem/Mid/Enforcer.h"
 
 
-ABurrowers::ABurrowers()
+AEnforcer::AEnforcer()
 {
 }
 
-void ABurrowers::BeginPlay()
+void AEnforcer::BeginPlay()
 {
 	Super::BeginPlay();
 }

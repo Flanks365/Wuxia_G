@@ -4,15 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "Enemies/BaseEnemy.h"
-#include "LowTierEnem.generated.h"
+#include "FodderEnem.generated.h"
 
+/**
+ * Fodder tier (GDD 3.1.1.6). Quick, fast-attacking enemies that make up most encounters (60%).
+ */
 UCLASS(Abstract)
-class LECTURE18552_API ALowTierEnem : public ABaseEnemy
+class LECTURE18552_API AFodderEnem : public ABaseEnemy
 {
 	GENERATED_BODY()
 
 public:
-	ALowTierEnem();
+	AFodderEnem();
 
 protected:
 	virtual void BeginPlay() override;

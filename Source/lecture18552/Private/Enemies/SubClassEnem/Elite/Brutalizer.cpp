@@ -1,14 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Enemies/SubClassEnem/Low/Rats.h"
+#include "Enemies/SubClassEnem/Elite/Brutalizer.h"
 
 
-ARats::ARats()
+ABrutalizer::ABrutalizer()
 {
 }
 
-void ARats::BeginPlay()
+void ABrutalizer::BeginPlay()
 {
 	Super::BeginPlay();
 }

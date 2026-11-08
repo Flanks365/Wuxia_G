@@ -41,7 +41,7 @@ struct FEnemyTierConfig
 {
 	GENERATED_BODY()
 
-	// Relative chance versus the other tiers. Low 70, Mid 25, Elite 5 = 70% / 25% / 5%.
+	// Relative chance versus the other tiers. GDD ratio: Fodder 60, Mid 30, Elite 10 = 60% / 30% / 10%.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning", meta = (ClampMin = "0.0"))
 	float SpawnChance = 0.0f;
 
@@ -66,10 +66,12 @@ protected:
 	TObjectPtr<UBillboardComponent> Billboard;
 #endif
 
-	// The spawn pool. EditDefaultsOnly: set it once in BP_EnemySpawner and every placed spawner
+	// The spawn pool, one tier per GDD role (Fodder / Mid-Tier / Elite).
+	// Spawn chances default to the GDD's 60/30/10 split; add the enemy classes in the BP.
+	// EditDefaultsOnly: set it once in BP_EnemySpawner and every placed spawner
 	// shares it. It can't be overridden per spawner in the level, so they can't drift out of sync.
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Spawning|Low Tier")
-	FEnemyTierConfig LowTier;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Spawning|Fodder Tier")
+	FEnemyTierConfig FodderTier;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Spawning|Mid Tier")
 	FEnemyTierConfig MidTier;

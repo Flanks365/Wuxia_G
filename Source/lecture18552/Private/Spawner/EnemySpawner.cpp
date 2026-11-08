@@ -53,6 +53,11 @@ AEnemySpawner::AEnemySpawner()
 		Billboard->SetupAttachment(Root);
 	}
 #endif
+
+	// GDD 3.1.1.6 encounter ratio: 60% fodder, 30% Enforcer, 10% Brutalizer.
+	FodderTier.SpawnChance = 60.0f;
+	MidTier.SpawnChance = 30.0f;
+	EliteTier.SpawnChance = 10.0f;
 }
 
 void AEnemySpawner::BeginPlay()
@@ -108,7 +113,7 @@ void AEnemySpawner::StopSpawning()
 
 const FEnemyTierConfig* AEnemySpawner::PickTier() const
 {
-	const FEnemyTierConfig* Tiers[] = { &LowTier, &MidTier, &EliteTier };
+	const FEnemyTierConfig* Tiers[] = { &FodderTier, &MidTier, &EliteTier };
 
 	float TotalChance = 0.0f;
 	for (const FEnemyTierConfig* Tier : Tiers)

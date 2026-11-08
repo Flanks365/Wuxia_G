@@ -4,15 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "Enemies/EliteEnem.h"
-#include "Brutes.generated.h"
+#include "Brutalizer.generated.h"
 
+/**
+ * Brutalizer - Role: Elite.
+ * Attack pattern: slow attacks, large projectiles. Appears every fourth floor.
+ */
 UCLASS()
-class LECTURE18552_API ABrutes : public AEliteEnem
+class LECTURE18552_API ABrutalizer : public AEliteEnem
 {
 	GENERATED_BODY()
 
 public:
-	ABrutes();
+	ABrutalizer();
 
 protected:
 	virtual void BeginPlay() override;

@@ -4,15 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "Enemies/MidTierEnem.h"
-#include "Imps.generated.h"
+#include "Enforcer.generated.h"
 
+/**
+ * Enforcer - Role: Mid-Tier.
+ * Attack pattern: mid-speed attacks, fairly slow projectiles. Appears after the second floor.
+ */
 UCLASS()
-class LECTURE18552_API AImps : public AMidTierEnem
+class LECTURE18552_API AEnforcer : public AMidTierEnem
 {
 	GENERATED_BODY()
 
 public:
-	AImps();
+	AEnforcer();
 
 protected:
 	virtual void BeginPlay() override;

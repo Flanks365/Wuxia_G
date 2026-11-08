@@ -1,14 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Enemies/LowTierEnem.h"
+#include "Enemies/FodderEnem.h"
 
 
-ALowTierEnem::ALowTierEnem()
+AFodderEnem::AFodderEnem()
 {
 }
 
-void ALowTierEnem::BeginPlay()
+void AFodderEnem::BeginPlay()
 {
 	Super::BeginPlay();
 }
