@@ -79,49 +79,24 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Spawning|Elite Tier")
 	FEnemyTierConfig EliteTier;
 
-	// Average seconds between spawn waves.
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning", meta = (ClampMin = "0.1"))
-	float SpawnInterval = 5.0f;
-
-	// Each wave's delay is randomized by up to this many seconds either side of SpawnInterval.
-	// 0 = perfectly regular. e.g. Interval 5, Variance 1.5 -> each wave comes 3.5 to 6.5 s after the last.
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning", meta = (ClampMin = "0.0"))
-	float SpawnIntervalVariance = 1.0f;
-
-	// Wait a random 0..SpawnInterval before the first wave, so spawners that start together don't fire together.
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning")
-	bool bRandomizeFirstSpawn = true;
-
 	// Group members are scattered randomly within this radius (cm) around the spawner.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning", meta = (ClampMin = "0.0"))
 	float GroupSpawnRadius = 300.0f;
 
-	// Start spawning automatically on BeginPlay. Turn off to drive it with StartSpawning/StopSpawning.
+	// Spawn automatically when the spawner loads in (i.e. when the room loads).
+	// Turn off to trigger it yourself with SpawnEnemy() instead.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning")
-	bool bAutoStart = true;
-
-	FTimerHandle SpawnTimerHandle;
+	bool bSpawnOnBeginPlay = true;
 
 	virtual void BeginPlay() override;
 
-	// Picks a tier, then an enemy in that tier, then spawns a group of it.
+	// Spawns this spawner's enemies one time: picks a tier, then an enemy in that tier,
+	// then a group of it. Does nothing if this spawner has already spawned.
 	UFUNCTION(BlueprintCallable, Category = "Spawning")
 	void SpawnEnemy();
 
-	UFUNCTION(BlueprintCallable, Category = "Spawning")
-	void StartSpawning();
-
-	UFUNCTION(BlueprintCallable, Category = "Spawning")
-	void StopSpawning();
-
-	// Called by the timer: spawns one wave, then schedules the next.
-	void HandleSpawnTimer();
-
-	// Sets a one-shot timer for the next wave after Delay seconds.
-	void ScheduleNextSpawn(float Delay);
-
-	// SpawnInterval with SpawnIntervalVariance applied.
-	float GetNextInterval() const;
+	UFUNCTION(BlueprintPure, Category = "Spawning")
+	bool HasSpawned() const { return bHasSpawned; }
 
 	// Returns the tier picked by SpawnChance, or nullptr if no tier can spawn anything.
 	const FEnemyTierConfig* PickTier() const;
@@ -130,4 +105,7 @@ protected:
 	static const FEnemySpawnEntry* PickEntry(const FEnemyTierConfig& Tier);
 
 	ABaseEnemy* SpawnEnemyAtTransform(TSubclassOf<ABaseEnemy> EnemyClass, const FTransform& SpawnTransform);
+
+private:
+	bool bHasSpawned = false;
 };

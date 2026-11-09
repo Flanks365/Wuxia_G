@@ -5,7 +5,6 @@
 
 #include "Components/BillboardComponent.h"
 #include "Engine/World.h"
-#include "TimerManager.h"
 
 
 namespace
@@ -39,14 +38,14 @@ namespace
 
 AEnemySpawner::AEnemySpawner()
 {
-	// Spawning is driven by a timer, so the spawner never needs to tick.
+	
 	PrimaryActorTick.bCanEverTick = false;
 
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	RootComponent = Root;
 
 #if WITH_EDITORONLY_DATA
-	// Editor-only icon so the spawner is visible in the viewport; it doesn't exist in packaged builds.
+	// Editor-only icon so the spawner is visible in the viewport;
 	Billboard = CreateEditorOnlyDefaultSubobject<UBillboardComponent>(TEXT("Billboard"));
 	if (Billboard)
 	{
@@ -64,50 +63,10 @@ void AEnemySpawner::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (bAutoStart)
+	// One spawn per room load. The room is cleared, the next room loads its own spawners.
+	if (bSpawnOnBeginPlay)
 	{
-		StartSpawning();
-	}
-}
-
-void AEnemySpawner::StartSpawning()
-{
-	// Random first delay de-syncs spawners that all start on the same frame.
-	const float FirstDelay = bRandomizeFirstSpawn
-		? FMath::FRandRange(0.0f, SpawnInterval)
-		: GetNextInterval();
-
-	ScheduleNextSpawn(FirstDelay);
-}
-
-void AEnemySpawner::HandleSpawnTimer()
-{
-	SpawnEnemy();
-	ScheduleNextSpawn(GetNextInterval());
-}
-
-void AEnemySpawner::ScheduleNextSpawn(float Delay)
-{
-	if (UWorld* World = GetWorld())
-	{
-		// One-shot timer re-armed after every wave, so each wave can get its own random interval.
-		// SetTimer requires a delay > 0, so clamp to a tiny minimum.
-		World->GetTimerManager().SetTimer(
-			SpawnTimerHandle, this, &AEnemySpawner::HandleSpawnTimer, FMath::Max(Delay, 0.01f), false);
-	}
-}
-
-float AEnemySpawner::GetNextInterval() const
-{
-	const float Jitter = FMath::FRandRange(-SpawnIntervalVariance, SpawnIntervalVariance);
-	return FMath::Max(SpawnInterval + Jitter, 0.1f);
-}
-
-void AEnemySpawner::StopSpawning()
-{
-	if (UWorld* World = GetWorld())
-	{
-		World->GetTimerManager().ClearTimer(SpawnTimerHandle);
+		SpawnEnemy();
 	}
 }
 
@@ -148,7 +107,7 @@ const FEnemyTierConfig* AEnemySpawner::PickTier() const
 		Roll -= Tier->SpawnChance;
 	}
 
-	// Floating-point safety net: a roll of exactly TotalChance falls through the loop.
+	// a roll of exactly TotalChance falls through the loop.
 	return LastValid;
 }
 
@@ -192,6 +151,12 @@ const FEnemySpawnEntry* AEnemySpawner::PickEntry(const FEnemyTierConfig& Tier)
 
 void AEnemySpawner::SpawnEnemy()
 {
+	if (bHasSpawned)
+	{
+		return;
+	}
+	bHasSpawned = true;
+
 	const FEnemyTierConfig* Tier = PickTier();
 	if (!Tier)
 	{
@@ -232,7 +197,7 @@ ABaseEnemy* AEnemySpawner::SpawnEnemyAtTransform(TSubclassOf<ABaseEnemy> EnemyCl
 
 	FActorSpawnParameters Params;
 	Params.Owner = this;
-	// If the spot overlaps something, nudge the enemy to a free spot instead of silently not spawning it.
+	// If the spot overlaps something, nudge the enemy to a free spot
 	Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 	return World->SpawnActor<ABaseEnemy>(EnemyClass, SpawnTransform, Params);
