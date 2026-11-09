@@ -1,18 +1,51 @@
-# Auto detect text files and perform LF normalization
+# =====================================================================
+#  Unreal Engine .gitattributes  (lecture18552)
+#  Patterns here are case-sensitive, so [xX] covers .fbx and .FBX.
+# =====================================================================
+
+# Auto-detect text files and normalize line endings
 * text=auto
 
-# Unreal binary assets (LFS + lockable so two people can't edit the same asset)
+# ---------------------------------------------------------------------
+# Unreal assets -> LFS + lockable (two people can't edit the same asset)
+# ---------------------------------------------------------------------
 *.uasset filter=lfs diff=lfs merge=lfs -text lockable
 *.umap   filter=lfs diff=lfs merge=lfs -text lockable
 
-# Other binaries you might commit
-*.fbx  filter=lfs diff=lfs merge=lfs -text
-*.png  filter=lfs diff=lfs merge=lfs -text
-*.tga  filter=lfs diff=lfs merge=lfs -text
-*.wav  filter=lfs diff=lfs merge=lfs -text
-*.mp4  filter=lfs diff=lfs merge=lfs -text
+# ---------------------------------------------------------------------
+# Source art / media -> LFS (only if committed outside Content/;
+# inside Content/ these are ignored by .gitignore)
+# ---------------------------------------------------------------------
+*.[fF][bB][xX]          filter=lfs diff=lfs merge=lfs -text
+*.[oO][bB][jJ]          filter=lfs diff=lfs merge=lfs -text
+*.[bB][lL][eE][nN][dD]  filter=lfs diff=lfs merge=lfs -text
+*.[pP][nN][gG]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][gG][aA]          filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][gG]          filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][eE][gG]      filter=lfs diff=lfs merge=lfs -text
+*.[pP][sS][dD]          filter=lfs diff=lfs merge=lfs -text
+*.[eE][xX][rR]          filter=lfs diff=lfs merge=lfs -text
+*.[hH][dD][rR]          filter=lfs diff=lfs merge=lfs -text
+*.[wW][aA][vV]          filter=lfs diff=lfs merge=lfs -text
+*.[mM][pP]3             filter=lfs diff=lfs merge=lfs -text
+*.[oO][gG][gG]          filter=lfs diff=lfs merge=lfs -text
+*.[mM][pP]4             filter=lfs diff=lfs merge=lfs -text
+*.[mM][oO][vV]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][tT][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[oO][tT][fF]          filter=lfs diff=lfs merge=lfs -text
 
-# Scripts need specific line endings to run
-*.sh  text eol=lf
-*.bat text eol=crlf
-*.ps1 text eol=crlf
+# ---------------------------------------------------------------------
+# Text files with fixed line endings
+# ---------------------------------------------------------------------
+*.sh   text eol=lf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Unreal / C++ text files (explicit so they're never treated as binary)
+*.uproject text
+*.uplugin  text
+*.ini      text
+*.h        text diff=cpp
+*.cpp      text diff=cpp
+*.cs       text diff=csharp

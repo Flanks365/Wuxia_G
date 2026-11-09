@@ -11,7 +11,6 @@ ABaseEnemy::ABaseEnemy()
 	PrimaryActorTick.bCanEverTick = false;
 
 	// Spawned enemies only get an AI controller if this is set; the default
-	// (PlacedInWorld) leaves spawner-created enemies with no controller.
 	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 
 	EnemyStats = CreateDefaultSubobject<UEnemyStatsComponent>(TEXT("EnemyStats"));
