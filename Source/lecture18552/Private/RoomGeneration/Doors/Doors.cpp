@@ -11,4 +11,8 @@ ADoors::ADoors()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+void ADoors::Interact(AActor* Interactor, UPrimitiveComponent* HitComponent)
+{
+}
+
 

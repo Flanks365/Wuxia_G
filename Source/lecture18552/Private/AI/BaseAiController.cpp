@@ -25,19 +25,19 @@ void ABaseAiController::BeginPlay()
 void ABaseAiController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
-	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(this, 0);
-	
-	if (PlayerPawn)
-	{
-		FVector PlayerLocation = PlayerPawn->GetActorLocation();
-		FNavLocation ProjectedNavLoc;
-		
-		UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld());
-		if (NavSys && NavSys->ProjectPointToNavigation(PlayerLocation, ProjectedNavLoc, FVector(500.0f,500.0f,1000.0f)))
-		{
-			MoveToLocation(ProjectedNavLoc.Location);
-		}
-	}
+	//
+	// APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(this, 0);
+	//
+	// if (PlayerPawn)
+	// {
+	// 	FVector PlayerLocation = PlayerPawn->GetActorLocation();
+	// 	FNavLocation ProjectedNavLoc;
+	// 	
+	// 	UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld());
+	// 	if (NavSys && NavSys->ProjectPointToNavigation(PlayerLocation, ProjectedNavLoc, FVector(500.0f,500.0f,1000.0f)))
+	// 	{
+	// 		MoveToLocation(ProjectedNavLoc.Location);
+	// 	}
+	// }
 }
 

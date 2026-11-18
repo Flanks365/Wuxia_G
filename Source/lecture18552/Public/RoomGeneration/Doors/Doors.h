@@ -24,4 +24,6 @@ public:
 	// Sets default values for this actor's properties
 	ADoors();
 	
+	virtual void Interact(AActor* Interactor, UPrimitiveComponent* HitComponent) override;
+	
 };

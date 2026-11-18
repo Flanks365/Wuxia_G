@@ -30,6 +30,14 @@ void ABaseRoom::Activate()
 }
 
 
+void ABaseRoom::OnActivated()
+{
+}
+
+void ABaseRoom::spawnDoors()
+{
+}
+
 void ABaseRoom::ClearRoom()
 {
 }

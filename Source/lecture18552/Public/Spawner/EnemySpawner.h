@@ -66,8 +66,8 @@ protected:
 	TObjectPtr<UBillboardComponent> Billboard;
 #endif
 
-	// The spawn pool, one tier per GDD role (Fodder / Mid-Tier / Elite).
-	// Spawn chances default to the GDD's 60/30/10 split; add the enemy classes in the BP.
+	// The spawn pool
+	//add the enemy classes in the BP.
 	// EditDefaultsOnly: set it once in BP_EnemySpawner and every placed spawner
 	// shares it. It can't be overridden per spawner in the level, so they can't drift out of sync.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Spawning|Fodder Tier")

@@ -18,27 +18,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73a98882-3b4a-4d76-b988-e1e2436ddff8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/AI/NPCAiController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/AI/NPCAiController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/LowTierEnem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/SubClassEnem/Elite/Brutes.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/SubClassEnem/Elite/Burrowers.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/SubClassEnem/Low/Grunts.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/SubClassEnem/Low/Rats.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/SubClassEnem/Mid/Imps.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Enemies/SubClassEnem/Mid/Wretches.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Spawner/EnemySpawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Spawner/EnemySpawner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/EliteEnem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/EliteEnem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/LowTierEnem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/MidTierEnem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/MidTierEnem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/SubClassEnem/Elite/Brutes.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/SubClassEnem/Elite/Burrowers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/SubClassEnem/Low/Grunts.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/SubClassEnem/Low/Rats.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/SubClassEnem/Mid/Imps.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Enemies/SubClassEnem/Mid/Wretches.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/level_main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/level_main.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Doors/Doors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Doors/Doors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/BaseRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/BaseRoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Doors/Doors.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Doors/Doors.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Spawner/EnemySpawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Spawner/EnemySpawner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lecture18552.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/lecture18552.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/AI/MyClass.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Character/PlayerCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Components/HealthComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Components/InventoryComponent.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -71,8 +61,16 @@
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Interactable/Shrine.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Projectile/Projectile.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Projectile/SpawnProjectile.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Doors/Doors.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/RoomGenerator.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/BaseRoom.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/Types/Boss.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/Types/Combat.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/Types/Mystery.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/Types/Shop.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/UI/ItemSlot.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/AI/BaseAiController.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/AI/MyClass.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Character/PlayerCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Components/HealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Components/InventoryComponent.h" root0="FORCE_HIGHLIGHTING" />
@@ -86,6 +84,14 @@
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Interactable/Shrine.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Projectile/Projectile.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Projectile/SpawnProjectile.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Doors/Doors.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/RoomGenerator.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/RoomTypes.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Rooms/BaseRoom.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Rooms/Types/Boss.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Rooms/Types/Combat.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Rooms/Types/Mystery.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Rooms/Types/Shop.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/UI/ItemSlot.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lecture18552.uproject" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -96,61 +102,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="8.778574309248387E-28" />
-      <entry key="MS500" value="3.878687565963579E-6" />
-      <entry key="S2" value="0.04438463261633764" />
-      <entry key="S5" value="0.29988996562984144" />
-      <entry key="S10" value="0.7242419467495869" />
-      <entry key="S30" value="3.7492916496323567" />
-      <entry key="S60" value="10.059026958262011" />
-      <entry key="M2" value="20.066899632887537" />
-      <entry key="M5" value="45.73661584453661" />
-      <entry key="M10" value="101.59319809473632" />
-      <entry key="M15" value="161.38093507168063" />
-      <entry key="M30" value="323.6335537706082" />
-      <entry key="H1" value="570.3605409497083" />
-      <entry key="H2" value="895.5021738834732" />
-      <entry key="H4" value="1233.9646437789297" />
-      <entry key="D1" value="1737.6384209656244" />
-      <entry key="W1" value="1857.7285270333377" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000504526457497" />
+      <entry key="S5" value="1.0212073861363706" />
+      <entry key="S10" value="1.3564346911914709" />
+      <entry key="S30" value="9.047843478561312" />
+      <entry key="S60" value="23.866352993658964" />
+      <entry key="M2" value="44.23525410568541" />
+      <entry key="M5" value="71.80139573379464" />
+      <entry key="M10" value="90.2225581750976" />
+      <entry key="M15" value="105.34457164220082" />
+      <entry key="M30" value="175.66084770146628" />
+      <entry key="H1" value="379.79178873417254" />
+      <entry key="H2" value="754.334813513714" />
+      <entry key="H4" value="1211.0773715085447" />
+      <entry key="D1" value="1976.7243576407645" />
+      <entry key="W1" value="2171.9556176490596" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000000027" />
-      <entry key="MS500" value="1.0012073000594932" />
-      <entry key="S2" value="1.1864034311046745" />
-      <entry key="S5" value="1.512042676571049" />
-      <entry key="S10" value="1.7689353633794136" />
-      <entry key="S30" value="2.970049065699999" />
-      <entry key="S60" value="4.754888005940746" />
-      <entry key="M2" value="7.229318809546434" />
-      <entry key="M5" value="12.165190148502628" />
-      <entry key="M10" value="20.683448640085732" />
-      <entry key="M15" value="30.215389883761723" />
-      <entry key="M30" value="58.603247414133854" />
-      <entry key="H1" value="102.66075097294139" />
-      <entry key="H2" value="156.68655380216484" />
-      <entry key="H4" value="209.2769003334258" />
-      <entry key="D1" value="284.3129121228416" />
-      <entry key="W1" value="301.894313954731" />
+      <entry key="MS100" value="4.548396559043316E-148" />
+      <entry key="MS500" value="3.400726177543342E-30" />
+      <entry key="S2" value="4.2943207784727645E-8" />
+      <entry key="S5" value="0.0011378133441501176" />
+      <entry key="S10" value="0.036872938499586186" />
+      <entry key="S30" value="0.6797366963087788" />
+      <entry key="S60" value="2.16791986448062" />
+      <entry key="M2" value="4.944290671380885" />
+      <entry key="M5" value="9.506427040919341" />
+      <entry key="M10" value="12.646141187640668" />
+      <entry key="M15" value="15.112770086692652" />
+      <entry key="M30" value="26.78302389400654" />
+      <entry key="H1" value="61.95839673554193" />
+      <entry key="H2" value="125.41313051985206" />
+      <entry key="H4" value="199.5406284875429" />
+      <entry key="D1" value="318.857854928224" />
+      <entry key="W1" value="348.6683263732346" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.053260253608362E-4" />
-      <entry key="MS500" value="0.22750106018422606" />
-      <entry key="S2" value="0.8388698025896383" />
-      <entry key="S5" value="1.5087411608209715" />
-      <entry key="S10" value="2.235970125749777" />
-      <entry key="S30" value="6.437937459495462" />
-      <entry key="S60" value="14.535436179845595" />
-      <entry key="M2" value="27.07447064590052" />
-      <entry key="M5" value="57.74738129209521" />
-      <entry key="M10" value="122.1258350890085" />
-      <entry key="M15" value="191.43979493316655" />
-      <entry key="M30" value="382.0808520829455" />
-      <entry key="H1" value="672.8842793431073" />
-      <entry key="H2" value="1052.0816455645447" />
-      <entry key="H4" value="1443.1681048468567" />
-      <entry key="D1" value="2021.9341903520487" />
-      <entry key="W1" value="2159.6202255062726" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9917167307382933" />
+      <entry key="S2" value="0.9979631231723444" />
+      <entry key="S5" value="1.0196282887544916" />
+      <entry key="S10" value="1.3802622481572122" />
+      <entry key="S30" value="9.657876018306641" />
+      <entry key="S60" value="25.928605617632883" />
+      <entry key="M2" value="49.05996818006535" />
+      <entry key="M5" value="81.21272070212191" />
+      <entry key="M10" value="102.80306327666143" />
+      <entry key="M15" value="120.40244060561994" />
+      <entry key="M30" value="202.38671630783392" />
+      <entry key="H1" value="441.67526482292726" />
+      <entry key="H2" value="879.6669529941393" />
+      <entry key="H4" value="1410.5508447281784" />
+      <entry key="D1" value="2295.56357922115" />
+      <entry key="W1" value="2520.6210113881984" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -461,17 +467,14 @@
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/lecture18552.uproject" />
       </configuration_1>
-      <configuration_2 setup="0">
+      <configuration_2>
         <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="IOS" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="1" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="IOS" />
+        <IOS setup="1">
+          <option name="IOSAppBundle" value="$PROJECT_DIR$/Binaries/IOS/lecture18552-IOS-DebugGame.app" />
+          <option name="IS_USER_MODIFIED" value="0" />
+        </IOS>
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/lecture18552.uproject" />
       </configuration_2>
       <configuration_3 setup="1">
@@ -526,17 +529,14 @@
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/lecture18552.uproject" />
       </configuration_6>
-      <configuration_7 setup="0">
+      <configuration_7>
         <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="IOS" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="1" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="IOS" />
+        <IOS setup="1">
+          <option name="IOSAppBundle" value="$PROJECT_DIR$/Binaries/IOS/lecture18552.app" />
+          <option name="IS_USER_MODIFIED" value="0" />
+        </IOS>
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/lecture18552.uproject" />
       </configuration_7>
       <configuration_8 setup="1">
@@ -578,17 +578,14 @@
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/lecture18552.uproject" />
       </configuration_10>
-      <configuration_11 setup="0">
+      <configuration_11>
         <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="IOS" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="1" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="IOS" />
+        <IOS setup="1">
+          <option name="IOSAppBundle" value="$PROJECT_DIR$/Binaries/IOS/lecture18552-IOS-Shipping.app" />
+          <option name="IS_USER_MODIFIED" value="0" />
+        </IOS>
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/lecture18552.uproject" />
       </configuration_11>
       <configuration_12 setup="1">
