@@ -37,6 +37,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "PlayerCharacter")
 	void RestoreEnergy(float Amount);
 	
+	UFUNCTION(BlueprintCallable, Category = "PlayerCharacter")
+	float GetCurrentEnergy() const { return Energy; }
+	
+	UFUNCTION(BlueprintCallable, Category = "PlayerCharacter")
+	float GetMaxEnergy() const { return MaxEnergy; }
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -93,6 +99,8 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Usable Item")
 	TObjectPtr<UItemDataAsset> PotionItem;
+	
+	void ApplySavedPlayerData();
 
 private:
 	FTimerHandle PlayerTimerHandle;

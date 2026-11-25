@@ -13,6 +13,7 @@
 #include "Interactable/Safe.h"
 #include "TimerManager.h"
 #include "Components/InventoryComponent.h"
+#include "Core/LectureGameInstance.h"
 #include "Data/ItemDataAsset.h"
 #include "Interactable/Shrine.h"
 
@@ -82,6 +83,40 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	ApplySavedPlayerData();
+	
+}
+
+void APlayerCharacter::ApplySavedPlayerData()
+{
+	ULectureGameInstance* GI = Cast<ULectureGameInstance>(GetGameInstance());
+	
+	if (!GetWorld() || !GI || !GI->SaveGame) return;
+	
+	const FPlayerSaveData& PlayerData = GI->SaveGame->PlayerData;
+	
+	// Apply the saved player data to the character
+	if (PlayerData.PlayerTransform.Equals(FTransform::Identity))
+	{
+		return;
+	}
+	
+	SetActorTransform(PlayerData.PlayerTransform, false, nullptr, ETeleportType::None);
+	
+	if (AController* PlayerController = GetController())
+	{
+		PlayerController->SetControlRotation(PlayerData.PlayerRotation);
+	}
+	
+	//update energy
+	
+	Energy = PlayerData.Energy;
+	OnEnergyChanged.Broadcast(Energy, MaxEnergy);
+	
+	if (InventoryComponent)
+	{
+		InventoryComponent->LoadItems(PlayerData.Items);
+	}
 }
 
 void APlayerCharacter::Look(const FInputActionValue& Value)
@@ -278,6 +313,7 @@ void APlayerCharacter::Land(const FInputActionValue& Value)
 	
 	GetWorldTimerManager().ClearTimer(PlayerTimerHandle);
 }
+
 
 // Called every frame
 void APlayerCharacter::Tick(float DeltaTime)

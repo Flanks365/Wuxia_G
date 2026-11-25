@@ -101,6 +101,23 @@ int32 UInventoryComponent::GetQuantity(UItemDataAsset* Item) const
 	return TotalCount;
 }
 
+void UInventoryComponent::LoadItems(const TArray<UItemDataAsset*>& SavedItems)
+{
+	Items.Empty();
+	
+	for (UItemDataAsset* Item : SavedItems)
+	{
+		if (!IsValid(Item))
+		{
+			continue;
+		}
+		
+		Items.Add(Item);
+	}
+	
+	OnInventoryUpdated.Broadcast();
+}
+
 TArray<UItemDataAsset*> UInventoryComponent::GetItems() const
 {
 	return Items;

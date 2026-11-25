@@ -18,16 +18,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73a98882-3b4a-4d76-b988-e1e2436ddff8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/AI/NPCAiController.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/AI/NPCAiController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Character/NpcCharacter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Core/LectureGameInstance.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Core/LectureSaveGame.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Character/NpcCharacter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Core/LectureGameInstance.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Core/LectureSaveGame.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lecture18552.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/level_main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/level_main.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Doors/Doors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Doors/Doors.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/BaseRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/BaseRoom.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Doors/Doors.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/RoomGeneration/Doors/Doors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Spawner/EnemySpawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Spawner/EnemySpawner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_Lecture8552_GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_Lecture8552_GameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_NPC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_NPC.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_Player_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Main/Blueprints/BP_Player_Character.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Character/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Character/PlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Components/InventoryComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Components/InventoryComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Private/Core/lecture18552_GameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Private/Core/lecture18552_GameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Character/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Character/PlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Components/InventoryComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Components/InventoryComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/lecture18552/Public/Core/lecture18552_GameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/lecture18552/Public/Core/lecture18552_GameMode.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +54,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/AI/BaseAiController.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/AI/MyClass.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Character/NPCCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Character/NPCCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Character/NpcCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Character/PlayerCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Components/HealthComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Components/InventoryComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Core/Lecture8552_PlayerController.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Core/LectureSaveGame.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Core/MyClass.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Environment/EnergyPond.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Environment/OverlapZone.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/Interactable/BigMachine.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -70,11 +81,13 @@
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/RoomGeneration/Rooms/Types/Shop.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Private/UI/ItemSlot.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/AI/BaseAiController.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/AI/MyClass.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Character/NpcCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Character/PlayerCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Components/HealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Components/InventoryComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Core/Lecture8552_PlayerController.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Core/LectureSaveGame.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Core/MyClass.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Environment/EnergyPond.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Environment/OverlapZone.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/lecture18552/Public/Interactable/BigMachine.h" root0="FORCE_HIGHLIGHTING" />
@@ -102,61 +115,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000504526457497" />
-      <entry key="S5" value="1.0212073861363706" />
-      <entry key="S10" value="1.3564346911914709" />
-      <entry key="S30" value="9.047843478561312" />
-      <entry key="S60" value="23.866352993658964" />
-      <entry key="M2" value="44.23525410568541" />
-      <entry key="M5" value="71.80139573379464" />
-      <entry key="M10" value="90.2225581750976" />
-      <entry key="M15" value="105.34457164220082" />
-      <entry key="M30" value="175.66084770146628" />
-      <entry key="H1" value="379.79178873417254" />
-      <entry key="H2" value="754.334813513714" />
-      <entry key="H4" value="1211.0773715085447" />
-      <entry key="D1" value="1976.7243576407645" />
-      <entry key="W1" value="2171.9556176490596" />
+      <entry key="MS100" value="2.5972651946784738E-14" />
+      <entry key="MS500" value="0.0019182441240709314" />
+      <entry key="S2" value="0.2166044914116773" />
+      <entry key="S5" value="0.805497875821435" />
+      <entry key="S10" value="2.6490513690341375" />
+      <entry key="S30" value="11.96997338587313" />
+      <entry key="S60" value="24.684071828915055" />
+      <entry key="M2" value="44.694881576515755" />
+      <entry key="M5" value="80.37190970434625" />
+      <entry key="M10" value="121.08148466606721" />
+      <entry key="M15" value="157.7350091137715" />
+      <entry key="M30" value="258.9762898103267" />
+      <entry key="H1" value="465.6085481950786" />
+      <entry key="H2" value="851.4567537035715" />
+      <entry key="H4" value="1357.4900899311958" />
+      <entry key="D1" value="2267.6975893917984" />
+      <entry key="W1" value="2509.2854254311533" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.548396559043316E-148" />
-      <entry key="MS500" value="3.400726177543342E-30" />
-      <entry key="S2" value="4.2943207784727645E-8" />
-      <entry key="S5" value="0.0011378133441501176" />
-      <entry key="S10" value="0.036872938499586186" />
-      <entry key="S30" value="0.6797366963087788" />
-      <entry key="S60" value="2.16791986448062" />
-      <entry key="M2" value="4.944290671380885" />
-      <entry key="M5" value="9.506427040919341" />
-      <entry key="M10" value="12.646141187640668" />
-      <entry key="M15" value="15.112770086692652" />
-      <entry key="M30" value="26.78302389400654" />
-      <entry key="H1" value="61.95839673554193" />
-      <entry key="H2" value="125.41313051985206" />
-      <entry key="H4" value="199.5406284875429" />
-      <entry key="D1" value="318.857854928224" />
-      <entry key="W1" value="348.6683263732346" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000215759643" />
+      <entry key="S2" value="1.0123732583971325" />
+      <entry key="S5" value="1.2076909373391547" />
+      <entry key="S10" value="1.6142760375653218" />
+      <entry key="S30" value="2.709217785175315" />
+      <entry key="S60" value="4.2306764982526035" />
+      <entry key="M2" value="7.1350329490125874" />
+      <entry key="M5" value="14.138366448985256" />
+      <entry key="M10" value="23.912683758830863" />
+      <entry key="M15" value="32.46153474962266" />
+      <entry key="M30" value="53.52759358843747" />
+      <entry key="H1" value="91.77570321670477" />
+      <entry key="H2" value="159.04828719732222" />
+      <entry key="H4" value="243.05619217818884" />
+      <entry key="D1" value="387.6894794277831" />
+      <entry key="W1" value="425.2339671625847" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9592641193252643" />
-      <entry key="MS500" value="0.9917167307382933" />
-      <entry key="S2" value="0.9979631231723444" />
-      <entry key="S5" value="1.0196282887544916" />
-      <entry key="S10" value="1.3802622481572122" />
-      <entry key="S30" value="9.657876018306641" />
-      <entry key="S60" value="25.928605617632883" />
-      <entry key="M2" value="49.05996818006535" />
-      <entry key="M5" value="81.21272070212191" />
-      <entry key="M10" value="102.80306327666143" />
-      <entry key="M15" value="120.40244060561994" />
-      <entry key="M30" value="202.38671630783392" />
-      <entry key="H1" value="441.67526482292726" />
-      <entry key="H2" value="879.6669529941393" />
-      <entry key="H4" value="1410.5508447281784" />
-      <entry key="D1" value="2295.56357922115" />
-      <entry key="W1" value="2520.6210113881984" />
+      <entry key="MS100" value="2.693124544390353E-10" />
+      <entry key="MS500" value="0.012340380518416053" />
+      <entry key="S2" value="0.4531967831392722" />
+      <entry key="S5" value="1.4519816391893556" />
+      <entry key="S10" value="3.831224028931105" />
+      <entry key="S30" value="14.371038690634332" />
+      <entry key="S60" value="28.643143479295063" />
+      <entry key="M2" value="51.59127516246414" />
+      <entry key="M5" value="94.33453087683728" />
+      <entry key="M10" value="144.8590784453272" />
+      <entry key="M15" value="190.0789828545403" />
+      <entry key="M30" value="312.40736229691896" />
+      <entry key="H1" value="557.2935329322577" />
+      <entry key="H2" value="1010.416842727867" />
+      <entry key="H4" value="1600.4732991663002" />
+      <entry key="D1" value="2655.3661615130773" />
+      <entry key="W1" value="2934.5160734382753" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">

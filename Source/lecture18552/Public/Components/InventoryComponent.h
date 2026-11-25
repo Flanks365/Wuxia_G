@@ -49,5 +49,8 @@ public:
 	int32 GetQuantity(UItemDataAsset* Item) const;
 	
 	UFUNCTION(BlueprintPure, Category = "Inventory")
+	void LoadItems(const TArray<UItemDataAsset*>& SavedItems);
+	
+	UFUNCTION(BlueprintPure, Category = "Inventory")
 	TArray<UItemDataAsset*> GetItems() const;
 };
